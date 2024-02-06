@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import RegistroUsuario from './components/RegistroUsuario';
+import Login from './components/Login';
+import AgregarGasto from './components/AgregarGasto';
 
-function App() {
+const App = () => {
+  const manejarAgregarGasto = (nuevoGasto) => {
+    // Lógica para manejar el nuevo gasto
+    console.log('Nuevo gasto:', nuevoGasto);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <RegistroUsuario/>
+      <Login/>
+      <AgregarGasto onAgregarGasto={manejarAgregarGasto} />
     </div>
   );
-}
+};
 
 export default App;
+
+
+
+

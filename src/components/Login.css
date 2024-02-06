@@ -1,0 +1,43 @@
+/* Login.css */
+
+.loginContainer {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+  
+  .loginTitle {
+    text-align: center;
+    color: #333;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginLabel {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333; /* Nuevo estilo: color del texto similar al del registro de usuario */
+  }
+  
+  .loginInput {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .loginButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
